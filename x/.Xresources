@@ -1,0 +1,63 @@
+!---------------------------------
+! URXVT Terminal config
+! --------------------------------
+
+! special
+*.foreground:   #eceff1
+*.background:   #202124
+*.cursorColor:  #eceff1
+
+! black
+*.color0:       #263238
+*.color8:       #37474f
+
+! red
+*.color1:       #ff9800
+*.color9:       #ffa74d
+
+! green
+*.color2:       #8bc34a
+*.color10:      #9ccc65
+
+! yellow
+*.color3:       #ffc107
+*.color11:      #ffa000
+
+! blue
+*.color4:       #03a9f4
+*.color12:      #81d4fa
+
+! magenta
+*.color5:       #e91e63
+*.color13:      #ad1457
+
+! cyan
+*.color6:       #009688
+*.color14:      #26a69a
+
+! white
+*.color7:       #cfd8dc
+*.color15:      #eceff1
+
+! urxvt*font: xft:IBM Plex Mono:style=Regular
+urxvt*font: xft:IBM Plex Mono
+
+urxvt.font: xft:IBM Plex Mono:size=11
+! URxvt.letterSpace: -1
+! URxvt.geometry: 80x33
+URxvt.scrollBar: false
+! URxvt*colorUL:                          yellow
+! URxvt*underlineColor:           yellow
+URxvt.cursorBlink:                      false
+URxvt.utf8:                             true
+URxvt.locale:                           true
+
+
+! Perl extensions
+/* URxvt.perl-ext:             default */
+/* URxvt.perl-ext-common:	    resize-font */
+/* URxvt.keysym.C-Down:	    resize-font:smaller */
+/* URxvt.keysym.C-Up:   	    resize-font:bigger */	    
+/* URxvt.keysym.C-equal:   	resize-font:reset */	
+/* URxvt.keysym.C-question:	resize-font:show */	 
+
