@@ -47,7 +47,7 @@ nmap <leader>I :action SelectIn<cr>
 nmap <leader>b :action ShowBookmarks<cr>
 
 " Refactorings
-vmap T :action Refactorings.QuickListPopupAction<cr>
+nmap <leader>R :action Refactorings.QuickListPopupAction<cr>
 nmap <leader>rr :action RenameElement<cr>
 nmap <leader>rg :action Generate<cr>
 nmap <leader>rI :action OptimizeImports<cr>
