@@ -1,3 +1,37 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+" set scrolloff=5
+
+" Do incremental searching.
+" set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+" map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
 set ignorecase
 set smartcase
 set scrolloff=3 " 3 lines above/below cursor when scrolling
@@ -29,8 +63,8 @@ vmap Q gq
 nmap Q gqap
 
 " Navigation
-nmap <C-i> :action Back<cr>
-nmap <C-o> :action Forward<cr>
+nmap <C-i> :action Forward<cr>
+nmap <C-o> :action Back<cr>
 nmap gd :action GotoDeclaration<cr>
 nmap gu :action FindUsages<cr>
 nmap gf :action GotoFile<cr>
@@ -55,12 +89,12 @@ nmap <leader>rI :action OptimizeImports<cr>
 nmap <leader>rc :action InspectCode<cr>
 
 " VCS operations
-nmap <leader>yy :action Vcs.Show.Local.Changes<cr>                          
+nmap <leader>yy :action Vcs.Show.Local.Changes<cr>
 nmap <leader>yp :action Vcs.QuickListPopupAction<cr>
 nmap <leader>ya :action Annotate<cr>
 nmap <leader>yl :action Vcs.Show.Log<cr>
 nmap <leader>yd :action Compare.LastVersion<cr>
-" nmap <leader>yr :action Git.ResolveConflicts<cr>                          
+" nmap <leader>yr :action Git.ResolveConflicts<cr>
 
 nnoremap [<space> O<esc>j
 nnoremap ]<space> o<esc>k
